@@ -38,7 +38,7 @@ class _ImageUploadScreenState extends State<ImageUploadScreen> {
     if (_imageFile == null) {
       print("Select an image to upload.");
     }
-    final uri = Uri.parse('https://codelime.in/api/remind-app-token');
+    final uri = Uri.parse('https://codelime.in/api/remind-app-toke');
     final request = http.MultipartRequest('POST', uri);
     final file = await http.MultipartFile.fromPath('image', _imageFile!.path);
     request.files.add(file);
